@@ -1,0 +1,18 @@
+@RestController// This Annotation makes this class serve as Rest end points
+
+@GetMapping//Rest end point
+
+@RequestMapping // to Map url to a class
+
+@Service // it tells that a class is a Service. And it'll be a single ton( i.e. For all the classes in which this service is injected, there will be one instance of this object.)
+Business Logic.
+
+@Entity // This annotation defines that a class can be mapped to a table. It is a marker. It doesn't do anything else.
+
+@Table // This annotation specifies the name of the table in db. We used it for Hibernate.
+
+@Id// This defines the primary key for the table.
+
+@Repository // Responsible for accessing data from db(Data access layer.) 
+
+@Transient // Tells that we don't need to store the below property or variable in the table. We can calculate it. Eg. Age

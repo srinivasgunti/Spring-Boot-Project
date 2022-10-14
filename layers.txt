@@ -1,0 +1,5 @@
+API layer - Rest api
+
+Service Layer - Business Logic.
+
+Data Access Layer - To connect to a DB.

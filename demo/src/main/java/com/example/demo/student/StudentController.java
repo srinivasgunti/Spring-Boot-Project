@@ -34,17 +34,17 @@ public class StudentController {
     public void registerNewStudent(@RequestBody Student student){
         studentService.addNewStudent(student);
     }
-/*
-    @DeleteMapping(path="{studentId}")
+
+    @DeleteMapping(path="api/v1/student/{studentId}")
     public void deleteStudent(@PathVariable("studentId") Long studentId){
         studentService.deleteStudent(studentId);
     }
-    @PutMapping(path="{studentId}")
+    @PutMapping(path="api/v1/student/{studentId}")
     public void udpateStudent(@PathVariable("studentId") Long studentId,
                               @RequestParam(required = false) String name,
                               @RequestParam(required = false) String email) {
 
         studentService.updateStudent(studentId, name, email);
-    }*/
+    }
 }
 
